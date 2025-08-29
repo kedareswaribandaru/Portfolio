@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+/* background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
+
+  background: linear-gradient(to right, #fff0e5, #f3e8ff);
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
+}
+
+.nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.logo span {
+  color: #1a237e;
+  text-shadow: 0 0 10px rgb(239, 238, 237);
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  position: relative;
+}
+
+.links a::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color:#1a237e;
+  transition: 0.3s ease;
+}
+
+.links a:hover::before {
+  width: 100%;
+}
+
+.contact-btn {
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: 2px solid #1a237e;
+}
+
+.contact-btn a {
+  color:#1a237e;
+}
+
+.contact-btn a:hover {
+  color:#fff;
+}
+
+.contact-btn:hover {
+  background-color: #1a237e;
+  color: #fff;
+}
+
+.hamburg, .cancel {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: black;
+}
+
+.dropdown {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform: translateY(-500px);
+  backdrop-filter: brightness(40%) blur(3px);
+  box-shadow: 0 0 20px black;
+  transition: 0.3s ease;
+}
+
+.dropdown .links {
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.dropdown .links a {
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.dropdown .links a:hover {
+  background-color:#1a237e;
+}
+
+/* Hero Section */
+#home {
+  padding: 5rem 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image {
+  width: 40%;
+  min-width: 300px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content {
+  width: 50%;
+  min-width: 300px;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+}
+
+.content h1 span {
+  color: #1a237e;
+  text-shadow: 0 0 10px rgb(239, 238, 237);
+}
+
+.typewriter {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.typewriter span {
+  color: #1a237e;
+  position: relative;
+}
+
+.typewriter span::before {
+  content: "Web Developer";
+  animation: words 5s infinite;
+}
+
+.typewriter span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid black;
+  animation: cursor 0.6s linear infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 3px solid #b74b4b;
+  }
+}
+
+@keyframes words {
+  0%, 33% {
+    content: "Fresher";
+  }
+}
+
+.content p {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.social-links i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid rgb(8, 8, 8);
+  border-radius: 50%;
+  color: #1a237e;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.social-links i:hover {
+  background-color: #1a237e;
+  color: white;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #1a237e;
+}
+
+.content button {
+  padding: 10px 20px;
+  margin: 10px 10px;
+  background-color: #fff;
+  color: #1a237e;
+  border: 2px solid #1a237e;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.content button:hover {
+  background-color:#1a237e;
+  border: 2px solid #1a237e;
+  color: #fff;
+  box-shadow: 0 0 20px rgb(223, 222, 221);
+  transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+  background: linear-gradient(to right, #fff0e5, #f3e8ff);
+  text-align: center;
+  padding: 5rem 10%;
+}
+
+.about-container h2 {
+  font-size: 2.5rem;
+  color: #1a237e;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px rgb(223, 222, 221);
+}
+
+.about-card {
+  background: #1a237e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.8;
+}
+
+/* Skills Section */
+#skills {
+  background: linear-gradient(to right, #fff0e5, #f3e8ff);
+  text-align: center;
+  padding: 5rem 10%;
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  color: #1a237e;
+  margin-bottom: 2rem;
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.skill {
+  background: #1a237e;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+
+/* Projects Section */
+#projects {
+  background: linear-gradient(to right, #fff0e5, #f3e8ff);
+  text-align: center;
+  padding: 5rem 10%;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  color: #1a237e;
+  margin-bottom: 2rem;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #1a237e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  color: #fff;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1a237e;
+  text-decoration: none;
+  background-color: #fff0e5;
+  border-radius: 8px;
+}
+
+/* Contact Section */
+#contact {
+  background: linear-gradient(to right, #fff0e5, #f3e8ff);
+  text-align: center;
+  padding: 5rem 10%;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  color: #1a237e;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #fff0e5, #f3e8ff);
+  color: #1a237e;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Responsive
+@media (max-width: 884px) {
+  .nav-container .links {
+    display */
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content h1 p{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

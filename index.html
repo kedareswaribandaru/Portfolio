@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kedareswari's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./script.js">
+    <!-- Bootstrap Connection -->
+    <link rel="stylesheet" href="./Assets/bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Kedareswari</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="#home">Home</a></div>
+                <div class="link"><a href="#about">About</a></div>
+                <div class="link"><a href="#skills">Skills</a></div>
+                <div class="link"><a href="#projects">Projects</a></div>
+                <div class="link"><a href="#contact">Contact</a></div>
+                <div class="link contact-btn"><a href="#">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="./Assets/Images/Profile-Pic.jpg" alt="Portfolio-Pic" />
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+                        Hey I'm <span>Kedareswari Bandaru</span>
+                    </h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                        I'm a <span></span>
+                    </div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                        As a Computer Science graduate, I am eager to apply my technical skills and problem-solving
+                        abilities in the Information Technology field.
+                    </p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://github.com/kedareswaribandaru"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/kedareswari-bandaru-8a8136261"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                     <a href="./Assets/Kedareswari-new Resume.pdf"><button>Download My Resume</button></a>   
+                    </div>
+                </div>
+            </div>
+    </section>
+<!-- 
+    <section>
+        <video src="./Assets/Videos/Blue-dress.mp4" width="550" height="550">Watch here</video>
+    </section> -->
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container" data-aos="fade-up" data-aos-duration="1000">
+            <h2>About Me</h2>
+            <div class="about-card">
+                <p>
+                    I am a passionate <strong>Frontend Developer</strong> with a <strong>B.Tech in Computer
+                        Science</strong>.
+                    I love creating modern and responsive web applications with clean code and great user experience.
+                    My goal is to join a reputed IT company where I can contribute my skills in real-world projects and
+                    grow as a developer.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-list">
+            <div class="skill"><i class="fa-brands fa-html5"></i> HTML5</div>
+            <div class="skill"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+            <div class="skill"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
+            <div class="skill"><i class="fa-brands fa-react"></i> React.js</div>
+            <div class="skill"><i class="fa-brands fa-git-alt"></i> Git/GitHub</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <div class="card">
+                <h3>Personal Portfolio Website</h3>
+                <p>A responsive website designed to present my professional identity online. Built using HTML, CSS, and Bootstrap, it features a clean layout, intuitive navigation, and mobile-friendly design. The site includes dedicated sections for my bio, technical skills, project showcases, and contact details—making it easy for visitors to learn about me and get in touch.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="card">
+                <h3>TechHouse UI Clone</h3>
+                <p>A frontend project replicating the design and layout of the TechHouse website. Built using HTML, CSS, and JavaScript to practice responsive design, layout structuring, and UI precision. This clone helped me strengthen my skills in recreating real-world interfaces.</p>
+                <a href="./Assets/TechHouse/index2.html" target="_blank">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Quiz App </h3>
+                <p>A responsive web-based quiz application built with HTML, CSS, JavaScript, and Bootstrap. It features multiple-choice questions, dynamic navigation, and real-time score calculation. Designed to showcase frontend skills and user interaction handling. </p>
+                <a href="./Assets/Quiz-App/index.html" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you’d like to collaborate or have any questions, feel free to reach out.</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Eswari | Frontend Developer</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/kedareswari-bandaru-8a8136261"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/kedareswaribandaru"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+
+        function hamburg() {
+            document.querySelector(".dropdown").style.transform = "translateY(0px)";
+        }
+
+        function cancel() {
+            document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+        }
+
+        document.querySelector(".contact-form")?.addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Thank you! Your message has been sent.");
+        });
+    </script>
+
+    <script src="./Assets/bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

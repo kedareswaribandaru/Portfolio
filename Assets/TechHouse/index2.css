@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.navbar {
+      border-bottom: 1px solid #ccc;
+      gap: 30px;
+      color: black;
+      /* box-shadow: 0 4px 10px rgba(192, 177, 177, 0.884); */
+      font-family: Arial, Helvetica, sans-serif;
+      justify-content: space-around;
+      height: 95px;
+      
+    }
+.navbar .navbarContent .navbar-nav {
+        display: flex;
+        gap: 24px;
+        padding-left: 50px;  
+        justify-content: space-around;      
+    }
+li {
+        display: flex;
+        gap: 24px;
+        font-size: 14px;
+        margin-left: 30px;
+        color: #000;
+        font-weight: 600;
+        justify-content: space-around;
+    }
+.navbar-nav .nav-link{
+  color:rgb(0 0 0 / 97%);
+  font-weight: 500;
+}
+
+
+.navbar-brand img {
+      height: 80px;
+    }
+.contact-number {
+      white-space: nowrap;
+    }
+
+/* Hero  */
+.hero {
+  color: #fff;
+  background: -webkit-linear-gradient(left, #e7516c, #1c2648);
+  font-family: "Lato", sans-serif;
+  margin-top: 80px;
+  width: 100%;
+  height: 600px;
+}
+
+.hero p {
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.hero h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700 !important;
+  font-size: 55px;
+  margin-top: 120px;
+}
+
+.hero .download-badge{
+  margin-top: 10px;
+  /* width: 100px; initial size */
+  transition: transform 0.3s ease; /* smooth scaling */
+}
+
+.hero .download-badge:hover{
+   transform: scale(1.1); /* scales image to 150% */
+}
+.hero .icon{
+  font-weight:bold;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+}
+.icon i{
+  margin-left: 5px;
+}
+.hero img {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-carousel {
+  margin: 30px 0 22px;
+  padding-top:55px;
+}
+
+.owl-carousel .owl-item.active .zoom-target img {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}
+
+.owl-carousel .owl-item{
+  overflow: hidden;
+}
+.hero-carousel .item.active img{
+  transition: transform 0.3s ease;
+}
+.hero-carousel .item img:hover{
+    /* width: 100%;
+    height: 350px;
+    transform: scale(1.2);
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden; */
+
+   
+  transform: scale(0.95); /* Zoom out effect */
+}
+
+.hero-carousel .owl-carousel .item img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+ 
+.img-fluid {
+    max-width: 100%;
+    height: 100%;
+}
+
+.custom-dots {
+  /* position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 10; */
+
+  bottom:8px;
+  top:auto;
+  left: 0;
+  width: 100%;
+}
+
+.custom-dots .dot {
+  /* display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease; */
+
+  bottom: var(--swiper-pagination-bottom, 8px);
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+}
+
+.custom-dots .dot.active {
+  opacity: 1;
+  background: #ff6600;
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.owl-next span {
+  font-size: 60px;
+  position: absolute;
+  top: 40%;
+  right: 1%;
+  color: #FD1D1D;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+}
+.owl-next span::after{
+  font-size: 20px !important;
+  color: #d8160b !important;
+  font-weight: bold;  
+  z-index: 10;
+}
+
+.owl-prev span {
+  font-size: 60px;
+  position: absolute;
+  top: 40%;
+  color: #FD1D1D;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.owl-prev span::after{
+  font-size: 20px !important;
+  color: #d8160b !important;
+  font-weight: bold;  
+  z-index: 10;
+}
+
+.zoom-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.zoom-image {
+  transition: transform 0.5s ease;
+  transform-origin: center center;
+}
+
+.zoom-wrapper:hover .zoom-image {
+
+  transform: scale(0.9); /* Zoom out slightly */
+}
+
+/* Our Services  */
+.service-card .text-center{
+  margin-top: 0;
+  margin-bottom:0.5rem;
+  font-weight:bolder;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 1px;
+  font-family: "Lato", sans-serif;
+}
+
+.service-card {
+  background: white;
+  transition: all 0.3s ease;
+  box-shadow: turquoise;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow:hidden;
+  border:1px solid rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  box-shadow:0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: 1px solid rgba(230, 12, 12, 0.918);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.service-card img {
+  width: 111px !important;
+  background: #e3f3f7;
+  padding: 9px;
+  height: 111px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+.serviceCardsSection {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  border: 2px solid rgb(228, 228, 228);
+  padding: 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* AboutUs */
+#AboutUs{
+  background-image: url(./Assets/Images/AboutUs-image.png);
+  background-color: #f8f9fa;
+  /* padding: 80px 0 70px; */
+}
+
+#AboutUs h2{
+  background: -webkit-linear-gradient(left,#e7516c, #1c2648);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+}
+
+#AboutUs p{
+  color: rgb(80, 80, 80);  
+  font-weight:300;
+  font-size: 14px !important;
+}
+.section-padding {
+    padding: 80px 0 70px;
+}
+
+.bg-pattern {
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    background-color: #f8f9fa;
+}
+.shadow-lg {
+    /* box-shadow: var(--bs-box-shadow-lg) !important; */
+}
+
+.serviceCardsSection .gradient-text{
+  background: -webkit-linear-gradient(#e7516c, #1c2648);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  text-align: left !important;
+  font-weight:bold;
+  text-transform: capitalize;
+  font-size: 33px;
+  font-family: "Lato", sans-serif;
+}
+
+.stat-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.bg-danger { 
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
+}
+.text-white { 
+    --bs-text-opacity: 1;
+   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important; 
+   padding-top: 20px; 
+}
+
+.me-3 {
+    margin-right: 1rem !important;
+}
+
+.section-padding h2{
+  margin-top: -80px;
+  font-size: 48px;
+  font-weight: 700 !important;
+  font-family: "Lato", sans-serif;
+}
+
+.section-padding p{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+.content{
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: rgb(80, 80, 80);
+}
+
+/* Why Choose Us */
+
+#whyChooseUs h1{
+  font-size: 48px;
+}
+
+#whyChooseUs h6{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 14px !important;
+  font-family: "Inter", sans-serif;
+}
+
+.why-choose-card h1{
+  text-align: center;
+  padding-top: 50px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
+}
+
+.why-choose-card h6{
+  text-align: center;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.why-choose-card {
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-bottom: 4px solid transparent;
+    /* color:rgba(33, 37, 41, 0.75); */
+    background: linear-gradient(rgba(0, 0, 128, 0.9), rgba(0, 0, 0, 0.9)), url(https://img.freepik.com/free-photo/repairman-doing-air-conditioner-service_23-2149241213.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height:100% !important;
+}
+
+.why-choose-card .card-1{
+  background: #fff;
+  font-family: "Lato", sans-serif;
+  color:#505050;
+  margin-top: 40px;
+  margin-bottom: 30px;
+   height: 280px !important;
+  /* border: 2px solid rgb(228, 228, 228); */
+  padding: 2rem;
+  border-radius: 15px;
+  box-sizing: border-box;
+  /* min-height: 271px;   */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-bottom: 4px solid transparent;
+}
+
+.why-choose-card .h4{
+  color: #212529;
+}
+
+.why-choose-card .card-1:hover {
+  border-bottom-color: #FD1D1D;
+  transform:translateY(-5px);
+  border: bottom height 50%; ;
+}
+
+
+/* How It Works */
+#how-it-works{
+    background-image: url(./Assets/Images/AboutUs-image.png);
+    padding-bottom: 50px;
+    background-color: #f8f9fa;
+}
+
+#how-it-works h2 {
+  background: -webkit-linear-gradient(left,#ec6c83, #1c2648);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  margin-bottom: 1rem !important;
+  font-weight: lighter;
+  font-family: "Lato", sans-serif;
+}
+
+#how-it-works p {
+  text-align: center;
+  font-size: smaller;
+  font-size: 18xpx !important;
+  padding-bottom: 3px;
+  padding-right: 2px;
+}
+
+#how-it-works .lead{
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.text-center{
+  padding-top: 80px;
+  font-weight: lighter;
+}
+
+.process-card{
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 8px #afafaf;
+  text-align: center !important;
+  border-radius: 15px;
+  height: 250px;
+}
+
+.process-card:hover{
+  box-shadow:0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transform: translateY(-10px);
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.process-card1:hover{
+  box-shadow:0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transform: translateY(-10px);
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+
+
+.process-card1{
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 8px #afafaf;
+  text-align: center !important;
+  border-radius: 15px;
+  height: 250px;
+}
+
+.process-card::before{
+    content: "";
+    position: absolute;
+    top: 2%;
+    right: 30px;
+    height: 108px;
+    width: 1px;
+    background-color: red;
+    rotate: 90deg;
+}
+
+.Downloads{
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./Assets/Images/Download-App-Bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.Downloads .text-white1{
+    padding-bottom: 20px;
+   --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.Downloads .mb-2{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+/* Contact Us */
+.contactUs{
+    text-align: center;
+    
+}
+.contact-item {
+    display: flex;
+}
+.contactUs1{
+    display: flex;
+    flex-direction:row;
+}
+
+.list{
+    list-style-type: none;
+}
+
+.list a{
+    text-decoration:none;
+}
+
+ 
+
+/* Contact Section Background */
+ 
+/* Contact Info Box */
+.contact-info {
+    background: #ffffff75;
+    border-left: 5px solid #ff4d4d;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bg-overlay {
+    background: linear-gradient(rgba(0, 0, 128, 0.9), rgba(0, 0, 0, 0.9)), url(https://img.freepik.com/free-photo/repairman-doing-air-conditioner-service_23-2149241213.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact-info:hover {
+    transform: translateY(-5px);
+}
+
+.contact-info .textwhiteP{
+  color: #fff;
+}
+
+.contact-info h5{
+  color: #fff;
+}
+
+/* Icons */
+.contact .icon-box {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(125deg, #ff4d4d, #1c2648);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px !important;
+    transition: all 0.3s ease;
+}
+
+.icon-box:hover {
+    background: linear-gradient(180deg, #ff4d4d, #1c2648);
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    height: 452px;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+}
+
+.footer-section{
+  height: 400px;
+  border-top: 3px solid #ff4c60;
+  padding-bottom: 0 !important;
+}
+
+.footer-section .list li{
+  text-align:center;
+}
+
+.footer-section h5{
+  font-size: 22px;
+  color: #ff4c60;
+  margin-top: 75px;
+  font-weight: 700 !important;
+}
+
+.footer-section img{
+  margin-top: 55px;
+}
+
+.footer-section .footer-gap{
+  padding-top: 30px;
+}
+
+.footer-bottom{
+ display: flex;
+ flex-direction: row;
+ background-color: #0c0c0c;
+ color: white;
+ height: 55px !important;
+ padding-right: 20px;
+}
+
+.footer-bottom .text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  color:rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+
+.footer-bottom .text p{
+  padding-left: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 1px;
+  padding-bottom: 25px;
+}
+
+.section-padding {
+    padding: 80px 0 70px;
+}
+
+.contact-form .gradientBtn{
+    margin-top: -140px;
+    background: linear-gradient(45deg, #ff4d4d, #1c2648);
+    border: none;
+}
+
+.px-5 {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+}
+.w-100 {
+    width: 100% !important;
+}
+
+ @keyframes floatUpDown {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(15px); }  
+    100% { transform: translateY(0); }     
+} 
+
+.Downloads{
+  height:550px;
+}
+
+.Downloads h1{
+  padding-top: 175px;
+  font-weight: 700 !important;
+}
+ 
+.floating-image {
+    margin-top:50px;
+    margin-bottom: 50px;
+    animation: floatUpDown 3s ease-in-out infinite;
+    position: relative;
+    height: 50px;
+    width: 210px;
+}
+
+.logo-img{
+  padding-top: 50px;
+  width: 120px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+/* App Screens */
+.App-Screens .gradient-text{
+  text-align: center;
+  margin-top: 25px;
+  background: -webkit-linear-gradient(left,#ec6c83, #1c2648);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.App-Screens h6{
+  color: #0c0c0c;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    .hero {
+        padding: 80px 0 50px 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+  .service-card h6{
+    font-size: 14px;
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+    .service-card img {
+        height: auto !important;
+    }
+}
+
